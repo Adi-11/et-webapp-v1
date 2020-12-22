@@ -14,7 +14,7 @@ export const Transaction = ({ transaction }) => {
                 {sign}₹{Math.abs(transaction.amount)}
             </span>
             <button className="delete-btn" onClick={() => {
-                deleteTransaction(transaction.id)
+                deleteTransaction(transaction._id)
             }}>
                 x
             </button>
